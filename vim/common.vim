@@ -4,7 +4,7 @@
 
 "Note: For some reason this hasn't worked
 
-if 0
+if 1
     inoremap  <Up>     <NOP>
     noremap   <Up>     <NOP>
     inoremap  <Down>   <NOP>
@@ -20,8 +20,6 @@ if 0
 endif
 
 set tabpagemax=64
-
-silent! colorscheme custom
 
 highlight ExtraWhitespace ctermbg=darkgreen guibg=darkgreen
 au InsertEnter * match ExtraWhitespace /\s\+\%#\@<!$/
@@ -42,7 +40,7 @@ filetype plugin indent on
 
 set backspace=2
 
-au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl setf glsl 
+au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl,*.glts setf glsl 
 
 map - :tabp<CR>
 map = :tabn<CR>
@@ -51,9 +49,15 @@ set viminfo=!,'25,\"100,:50,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
 let g:localvimrc_sandbox=0
-let g:localvimrc_whitelist='/home/v7/ad-lib'
+let g:localvimrc_whitelist='/Users'
 
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
 match ToDo /\s\+$/
+
+set hidden
+set shell=bash\ -l
+
+set incsearch
+set hlsearch

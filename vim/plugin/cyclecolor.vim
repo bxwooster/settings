@@ -98,11 +98,11 @@ function! s:CycleColor(direction)
 			let s:currentname = g:colors_name
 			if clrschm != g:colors_name
 				" Let user know colorscheme did not set g:colors_name properly
-				echomsg 'colorscheme' clrschm 'set g:colors_name to' g:colors_name
+				" echomsg 'colorscheme' clrschm 'set g:colors_name to' g:colors_name
 			endif
 		else
 			let s:currentname = ""
-			echomsg 'colorscheme' clrschm 'did not set g:colors_name'
+			"echomsg 'colorscheme' clrschm 'did not set g:colors_name'
 		endif
 		echo s:currentname.' ('.nextfile.')'
 	endif
