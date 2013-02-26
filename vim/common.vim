@@ -42,9 +42,6 @@ set backspace=2
 
 au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl,*.glts setf glsl 
 
-map - :tabp<CR>
-map = :tabn<CR>
-
 set viminfo=!,'25,\"100,:50,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g`\"" | endif
 
@@ -60,4 +57,4 @@ set hidden
 set shell=bash\ -l
 
 set incsearch
-set hlsearch
+set noswapfile
