@@ -22,8 +22,6 @@ let c_no_curly_error = 1
 
 filetype plugin indent on
 
-au BufNewFile,BufRead *.frag,*.vert,*.fp,*.vp,*.glsl,*.glts setf glsl
-
 set statusline=%<%f\ %h%m%r%=%-14.(%l,%c%V%)\ %P
 set laststatus=2
 
