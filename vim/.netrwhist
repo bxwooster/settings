@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='/Users/george/spark'
-let g:netrw_dirhist_2='/Users/george/settings'
-let g:netrw_dirhist_3='/Users/george/spark'
-let g:netrw_dirhist_4='/Users/george/spark/ad-lib/new_code'
-let g:netrw_dirhist_5='/Users/george/spark/ad-lib'
-let g:netrw_dirhist_6='/Users/george'
