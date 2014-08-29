@@ -10,9 +10,12 @@ if 1
     Plugin 'xolox/vim-misc'
     Plugin 'xolox/vim-colorscheme-switcher'
     Plugin 'xolox/vim-lua-ftplugin'
+    " Plugin 'xolox/vim-easytags'
+    " Plugin 'xolox/vim-lua-inspect'
     Plugin 'tpope/vim-repeat'
     Plugin 'tpope/vim-surround'
     Plugin 'tpope/vim-commentary'
+	Plugin 'tpope/vim-dispatch'
 	Plugin 'mileszs/ack.vim'
 	Plugin 'alols/vim-love-efm'
 	Plugin 'vimoutliner/vimoutliner'
@@ -22,6 +25,10 @@ if 1
     filetype plugin indent on    " required
 endif
 " ---------- End Of Vundle
+
+" -- Lua
+let g:lua_check_syntax = 0
+let g:lua_inspect_events = ''
 
 " ---- Easymotion
 map <Leader> <Plug>(easymotion-prefix)
